@@ -1,0 +1,198 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Cabin Condensed', sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* CSS For the site code */
+
+header {
+    width: 100%;
+}
+
+header .header-image {
+    background-image: url("../images/header-image.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+}
+
+
+.navbar {
+    width: 150px;
+    background-color: #e5e6e4;
+    color: black;
+    font-size: 1.1rem;
+    min-height: 800px;
+    float: left;
+}
+
+.navbar ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+.navbar ul li a {
+    color: inherit;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+    font-weight: 700;
+    color: #004489;
+}
+
+main {
+    display: inline-block;
+    width: 60%;
+    text-align: justify;
+    margin: 2rem;
+    height: 100%;
+}
+
+main h1 {
+    color: #1268be;
+    font-weight: 900;
+    font-size: 2.5 rem;
+}
+
+main .aboutme {
+    font-size: 1.1rem;
+}
+
+main ul {
+    list-style: none;
+    font-size: 1.2rem;
+    color: #184a7c;
+    text-align: center;
+}
+
+main ul li {
+    margin-top: 3px;
+}
+
+main ul li a {
+    color: inherit;
+    line-height: 1rem;
+}
+
+aside {
+    width: 250px;
+    background-color: #e9ecef;
+    color: black;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+    float: right;
+}
+
+aside p {
+    padding: 1.2rem;
+    color: #004489;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+aside ul {
+    width: 100%;
+    height: 500px;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+aside ul li a {
+    color: inherit;
+}
+
+aside ul li a:hover {
+    color: #004489;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #184a7c;
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* For mobile Devices */
+@media screen and (max-width:769px) {
+    header .header-image {
+        height: 120px;
+    }
+
+    .navbar {
+        width: 100%;
+        height: 50px;
+        margin-top: 0;
+
+    }
+
+    .navbar ul {
+        list-style: none;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+    }
+
+
+    aside {
+        width: 100vw;
+        color: black;
+        background-color: #72b0ee;
+        margin-bottom: 0;
+
+    }
+
+    aside p {
+        text-align: center;
+        color: #004489;
+        font-size: 600;
+    }
+
+
+    aside ul {
+        display: flex;
+        height: 50px;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+}
