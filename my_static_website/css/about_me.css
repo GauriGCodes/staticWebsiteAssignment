@@ -1,9 +1,7 @@
 html,
 body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
     font-family: 'Cabin Condensed', sans-serif;
+    margin: 0;
 }
 
 ul {
@@ -29,14 +27,18 @@ header .header-image {
     height: 200px;
 }
 
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
 
 .navbar {
-    width: 150px;
+    flex-basis: 10%;
+    min-width: 10%;
     background-color: #e5e6e4;
     color: black;
     font-size: 1.1rem;
-    min-height: 800px;
-    float: left;
 }
 
 .navbar ul {
@@ -45,7 +47,7 @@ header .header-image {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 100vh;
+    height: 100%;
 }
 
 .navbar ul li a {
@@ -61,17 +63,15 @@ header .header-image {
 }
 
 main {
-    display: inline-block;
-    width: 60%;
-    text-align: justify;
-    margin: 2rem;
-    height: 100%;
+    flex-basis: 75%;
+    min-width: 75%;
 }
 
 main h1 {
     color: #1268be;
     font-weight: 900;
     font-size: 2.5 rem;
+    text-align: center;
 }
 
 main .aboutme {
@@ -83,6 +83,7 @@ main ul {
     font-size: 1.2rem;
     color: #184a7c;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 main ul li {
@@ -95,32 +96,29 @@ main ul li a {
 }
 
 aside {
-    width: 250px;
+    flex-basis: 15%;
+    min-width: 15%;
     background-color: #e9ecef;
     color: black;
     font-size: 1.3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100%;
-    float: right;
 }
 
 aside p {
-    padding: 1.2rem;
     color: #004489;
     font-size: 1.5rem;
     text-align: center;
 }
 
 aside ul {
-    width: 100%;
-    height: 500px;
     list-style: none;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    height: 100%;
 }
 
 aside ul li a {
@@ -142,15 +140,20 @@ footer {
     align-items: center;
 }
 
+/* Responsive for screen width < 796px */
 
-/* For mobile Devices */
 @media screen and (max-width:769px) {
     header .header-image {
         height: 120px;
     }
 
+    .container {
+        flex-direction: column;
+    }
+
     .navbar {
-        width: 100%;
+        flex-basis: 100%;
+        min-width: 100%;
         height: 50px;
         margin-top: 0;
 
@@ -184,8 +187,8 @@ footer {
 
     aside ul {
         display: flex;
-        height: 50px;
-        flex-direction: row;
+        height: 100px;
+        flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         font-size: 0.9rem;
