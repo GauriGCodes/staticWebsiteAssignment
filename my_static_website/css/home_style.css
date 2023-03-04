@@ -15,11 +15,12 @@ ul {
 
 /* CSS For the site code */
 
+
 header {
     width: 100%;
 }
 
-header .header-image {
+#header-image {
     background-image: url("../images/header-image.jpg");
     background-size: cover;
     background-position: center;
@@ -39,6 +40,11 @@ header .header-image {
     background-color: #e5e6e4;
     color: black;
     font-size: 1.1rem;
+}
+
+.active {
+    text-decoration: underline;
+    color: yellow;
 }
 
 .navbar ul {
@@ -153,7 +159,7 @@ footer {
 /* Responsive for screen width < 796px */
 
 @media screen and (max-width:769px) {
-    header .header-image {
+    #header-image {
         height: 120px;
     }
 

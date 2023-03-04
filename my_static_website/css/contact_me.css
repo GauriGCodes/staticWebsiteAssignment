@@ -20,7 +20,7 @@ header {
 }
 
 header .header-image {
-    background-image: url("../images/header-image.jpg");
+    background: url("../images/header-image.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -62,6 +62,10 @@ header .header-image {
     color: #004489;
 }
 
+.active {
+    color: yellow;
+    text-decoration: underline;
+}
 
 main {
     flex-basis: 70%;
