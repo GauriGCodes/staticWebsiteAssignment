@@ -1,5 +1,5 @@
-var bgColors = ["#f8f9fa", "#e9ecef", "#dee2e6"];
-let randomNum = Math.floor(Math.random() * 2);
+var bgColors = ["#ccdbfd", "#f4f1de"];
+let randomNum = Math.floor(Math.random() * 1);
 
 function myFunction() {
     document.body.style.backgroundColor = bgColors[randomNum];
